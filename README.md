@@ -1,5 +1,8 @@
+# versrt
 
 Make comparing version strings super simple.
+
+## Quick start
 
 If you want to check that a code use the appropriate version of your package as easy as:
 
@@ -29,3 +32,18 @@ except ImportError:
     __version__ = None
 ```
 
+## Installation 
+
+Install `verstr` with pip
+
+```bash 
+  pip install verstr
+```
+
+## Contributing
+
+You are welcome to help the project, see [how](/CONTRIBUTING.md).
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
