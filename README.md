@@ -1,4 +1,4 @@
-# versrt
+# verstr
 
 Make comparing version strings super simple.
 
