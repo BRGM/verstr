@@ -1,4 +1,4 @@
-name: Dev workflow - check build and run tests
+name: Check Package
 
 on: push
 
