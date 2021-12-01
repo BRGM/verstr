@@ -19,5 +19,6 @@ jobs:
     steps:
       - name: install pytest
         run: pip install pytest
+      - run: ls -l
       - name: run pytest
         run: pytest
