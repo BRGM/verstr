@@ -1,9 +1,12 @@
 name: Dev workflow - check build and run tests
+
 on: push
 
 jobs:
   check-package:
+
     runs-on: ubuntu-latest
+
     steps:
       - name: checkout code
         uses: actions/checkout@v2
