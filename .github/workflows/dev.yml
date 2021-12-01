@@ -1,0 +1,15 @@
+name: Dev workflow - check build and run tests
+on: push
+
+jobs:
+  check-install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@mv2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: install package
+        run: pip install .
