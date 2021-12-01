@@ -2,7 +2,7 @@ name: Dev workflow - check build and run tests
 on: push
 
 jobs:
-  check-install:
+  check-package:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
@@ -13,12 +13,7 @@ jobs:
           python-version: '3.x'
       - name: install package
         run: pip install .
-  check-tests:
-    needs: check-install
-    runs-on: ubuntu-latest
-    steps:
-      - name: install pytest
-        run: pip install pytest
-      - run: ls -l
-      - name: run pytest
-        run: pytest
+      - name: check tests
+        run: |
+          pip install pytest
+          pytest
