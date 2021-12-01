@@ -15,6 +15,7 @@ jobs:
         run: pip install .
   run tests:
     needs: check-install
+    runs-on: ubuntu-latest
     steps:
       - name: pytest
         run: pytest
