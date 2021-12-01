@@ -1,4 +1,17 @@
-""" 
+""" Make comparing version strings super simple.
+
+If you want codes using your package to be able to verify its version as easily as::
+
+  # user_code.py
+  import my_package
+  assert my_package.__version__ >= "1.1"
+
+Just customize your package as follows::
+
+  # my_package/__init__.py
+  import verstr
+  __version__ = verstr.verstr("1.2.4")
+
 """
 
 import collections
