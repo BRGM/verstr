@@ -17,4 +17,4 @@ jobs:
     needs: check-install
     steps:
       - name: pytest
-        uses: pytest
+        run: pytest
