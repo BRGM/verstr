@@ -13,9 +13,11 @@ jobs:
           python-version: '3.x'
       - name: install package
         run: pip install .
-  run-tests:
+  check-tests:
     needs: check-install
     runs-on: ubuntu-latest
     steps:
-      - name: pytest
+      - name: install pytest
+        run: pip install pytest
+      - name: run pytest
         run: pytest
