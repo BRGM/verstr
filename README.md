@@ -42,7 +42,7 @@ Install `verstr` with pip
 
 ## Contributing
 
-You are welcome to help the project, see [how](/CONTRIBUTING.md).
+You are welcome to help the project, see [how](https://github.com/BRGM/verstr/blob/main/CONTRIBUTING.md).
 
 ## License
 
