@@ -20,7 +20,7 @@ import verstr
 __version__ = verstr.verstr("1.2.4")
 ```
 
-or if you are using a tool such as [`setuptools_scm`]() to generate a `_version.py` submodule:
+or if you are using a tool such as [`setuptools_scm`](https://github.com/pypa/setuptools_scm) to generate a `_version.py` submodule:
 
 ```python
 # my_package/__init__.py
